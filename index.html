@@ -1,83 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentine's Day Invitation</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-image: url('hearts.jpg');
-            background-size: cover;
-            background-position: center;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            color: white;
-        }
-        .container {
-            max-width: 600px;
-            margin: 50px auto;
-            padding: 20px;
-            background-image: url('roses.jpg'); /* Add this line */
-            background-size: cover; /* Add this line */
-            background-position: center; /* Add this line */
-            border-radius: 100px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
-        h1 {
-            color: #e91e63;
-        }
-        p {
-            color: #fff;
-            line-height: 1.6;
-        }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #e91e63;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-            margin: 10px;
-        }
-        .btn:hover {
-            background-color: #c2185b;
-        }
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-        .dropdown-content a:hover {
-            background-color: #f1f1f1;
-        }
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>`I Love Jhin and Yasuo`</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('yass.jpg'); /* Add the URL of your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    margin: 0; /* Remove default margin */
+  }
+  .container {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background to make text readable */
+    border-radius: 10px;
+  }
+  .love-message {
+    color: #ff1493; /* Hot pink */
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  .jhin-image {
+    margin-top: 20px;
+    max-width: 300px;
+    cursor: pointer; /* Add cursor pointer */
+  }
+  .button {
+    margin-top: 20px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+</style>
 </head>
 <body>
-    <div class="container">
-        <!-- Rest of your HTML content -->
-    </div>
 
-    <script>
-        // Your JavaScript code here
-    </script>
+<div class="container">
+  <div class="love-message">
+    <p>I love Jhin</p>
+  </div>
+
+  <a href="https://www.leagueofgraphs.com/summoner/eune/JhinYas-EUNE">
+    <img class="jhin-image" src="jhin splash art.jpg" alt="Jhin Image" onclick="showClickIndicator()">
+  </a>
+
+  <button class="button" onclick="showPointsMessage()">I have over 1 million points on Jhin and Yasuo</button>
+
+  <div id="clickIndicator" style="display: none;">Clicked!</div>
+</div>
+
+<script>
+  function showClickIndicator() {
+    var clickIndicator = document.getElementById("clickIndicator");
+    clickIndicator.style.display = "block";
+  }
+
+  function showPointsMessage() {
+    alert("That's impressive!");
+  }
+</script>
+
 </body>
 </html>
